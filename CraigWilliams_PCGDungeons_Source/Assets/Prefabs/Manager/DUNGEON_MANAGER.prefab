@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2838385496364972457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4375864207480525385}
+  m_Layer: 0
+  m_Name: DungeonHallways
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4375864207480525385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838385496364972457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9155483109005848475}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9155483108932589043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9155483108932589044}
+  m_Layer: 0
+  m_Name: DungeonRooms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9155483108932589044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155483108932589043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9155483109005848475}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9155483109005848474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9155483109005848475}
+  - component: {fileID: 9155483109005848477}
+  - component: {fileID: 9155483109005848476}
+  - component: {fileID: 4429883382583258684}
+  m_Layer: 0
+  m_Name: DUNGEON_MANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9155483109005848475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155483109005848474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9155483108932589044}
+  - {fileID: 4375864207480525385}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9155483109005848477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155483109005848474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032bba8f39f91094fa394b5145ccf746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heuristic: 0
+  HeuristicWeight: 1
+  TileTypeCosts:
+  - 5
+  - 10
+  - 1
+--- !u!114 &9155483109005848476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155483109005848474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7e7a2f3fdb78d44a2937056a3dbbdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DungeonSize: {x: 30, y: 30}
+  BaseRoomTile: {fileID: 4461283860262254793, guid: 18cb43520a909a34bb28597fa2482a04, type: 3}
+  BaseHallTile: {fileID: 6415371703268809381, guid: 6516be178b1ad0546ba9b78f1256fe6d, type: 3}
+  RoomParentSpawn: {fileID: 9155483108932589044}
+  BaseRoom: {fileID: 4670063243446339911, guid: 9c7ad4f624c02254c9d21420b55fbc1f, type: 3}
+  MaxRooms: 100
+  MaxRoomAttempts: 100
+  MaxRoomSize: {x: 6, y: 6}
+  RoomBorder: 1
+  HallwayParentSpawn: {fileID: 4375864207480525385}
+  LoopbackChance: 0.125
+  NoRandomization: 1
+  ForcedSeed: 0
+  GenerateNewDungeon: 0
+  DisplayRoomGizmos: 0
+  RoomGizmosColor: {r: 1, g: 0, b: 0, a: 1}
+  DisplayHallwayGizmos: 0
+  HallwayGizmosColor: {r: 0, g: 0, b: 1, a: 1}
+  DisplayDelaunayGizmos: 1
+  DelaunayGizmosColor: {r: 1, g: 1, b: 1, a: 1}
+  DisplayMSTGizmos: 1
+  MSTGizmosColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &4429883382583258684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155483109005848474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91b327c4e2ec2b40bf5d37c89d9296f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomEnvironmentTileCount: {x: 2, y: 10}
+  RoomEnvironments:
+  - environment: 2
+    tileProbability: 0.5
+    spreadRange: {x: 1, y: 3}
+    spreadProbability: 0.7
+  - environment: 3
+    tileProbability: 0.5
+    spreadRange: {x: 1, y: 3}
+    spreadProbability: 0.7
+  riverProbability: 0.5
+  maxRoomRivers: 5
+  RiverSizeRange: {x: 1, y: 10}
+  EnvironmentDecors:
+  - environment: 0
+    decors:
+    - decor: 3
+      probability: 0.3
+    - decor: 2
+      probability: 0.2
+  - environment: 2
+    decors:
+    - decor: 2
+      probability: 0.5
+  - environment: 3
+    decors:
+    - decor: 2
+      probability: 0.2
+    - decor: 3
+      probability: 0.5
